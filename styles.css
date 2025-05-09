@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;  
+    height: 100vh;   
+    background-image: url("img/fondo.png"); 
+    background-repeat: no-repeat; 
+    background-size: 100vw auto;
+    background-position: center top; 
+    background-attachment: fixed;
+    background-color: #f5e9d3;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 102, 204, 0.8); /* Fondo semitransparente */
+  color: white;
+  text-align: center;
+  padding: 0px auto; /* Espaciado ajustado */
+  height: 70px; /* Altura fija de 70px */
+  margin: 0;
+  line-height: 8px;
+  overflow: hidden;
+  display: block;
+}
+
+/* Header - Ajustar el texto del párrafo */
+header p {
+  margin: 0; /* Quita el margen por defecto */
+  font-size: 16px; /* Tamaño de fuente ajustado */
+  line-height: 16px; /* Altura de línea ajustada */
+}
+
+#mapa-principal {
+  position: relative;
+  width: 580px;
+  height: auto;
+  margin: 40px auto 0;
+}
+
+#mapa-base {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.region {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.region:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px auto;
+  height: 40px; /* Altura fija de 30px */
+  text-align: center; /* Padding arriba y abajo */
+  background-color: rgba(0, 102, 204, 0.8); /* Fondo semitransparente */
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}

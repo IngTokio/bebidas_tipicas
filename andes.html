@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Región Andina</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>       
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        #portada-andina {
+            width: 800px;
+            max-width: 95%;
+            position: relative;
+        }
+
+        .pill-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .pill {
+            background: #fff;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+        .pill:hover {
+            background: #000;
+            color: #fff;
+        }
+
+          .btn-volver {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #0057a8;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Un Viaje por las Bebidas Típicas de Colombia</h1>
+        <p>Región Andina</p>
+    </header>
+
+    <main>
+        <div id="portada-andina">
+            <img src="img/region_andina.png" alt="Región Andina" style="width: 100%; border-radius: 10px" />
+            <a href="index.html" class="btn-volver">⬅ Mapa</a>
+
+            <div class="pill-buttons">
+                <a href="andes_bebida.html" class="pill">Bebida Típica</a>
+                <a href="andes_postres.html" class="pill">Postres</a>
+                <a href="andes_comida.html" class="pill">Comida Típica</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>¡Gracias por visitar! Explora más sobre las regiones de Colombia.</p>
+        <p>Proyecto realizado por: Harold Huertas y colaboradores</p>
+    </footer>
+</body>
+
+</html>

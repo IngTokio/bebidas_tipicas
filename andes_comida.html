@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Región Andina</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .mosaic-container {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #000000aa;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .nav.prev {
+            left: 10px;
+        }
+
+        .nav.next {
+            right: 10px;
+        }
+
+        .dots {
+            margin-top: 20px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+            background-color: #45a3e2;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #000;
+        }
+
+        .pill.return {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #000000;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .pill.return:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Un Viaje por las Bebidas Típicas de Colombia</h1>
+        <p>Región Andina</p>
+    </header>
+
+    <main class="mosaic-container">
+        <h2 class="region-title">Comida Típica - Región Andina</h2>
+
+        <div class="carousel">
+            <button class="nav prev" onclick="changeSlide(-1)">❮</button>
+
+            <div class="slides">
+                <img src="img/andes_bebida1.png" class="slide active">
+                <img src="img/andes_bebida2.png" class="slide">
+            </div>
+
+            <button class="nav next" onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+        </div>
+
+        <div class="return-map">
+            <a href="andes.html" class="pill return">← Volver</a>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>¡Gracias por visitar! Explora más sobre las regiones de Colombia.</p>
+        <p>Proyecto realizado por: Harold Huertas y colaboradores</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
